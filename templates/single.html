@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block langing %}
+<div class="wrap">
+  <h1>{% block name %} {{ student.name }} {% endblock %}</h1>
+</div>
+<div class="features clearfix">
+  <div class="wrap">
+    <div class="col">
+      <h2>Algebra</h2>
+        {% block col1 %}
+        <p>{{ student.alg_grades }}</p>
+        <p class="term">{{ student.alg_term_grades }}<p>
+        {% endblock%}
+    </div>
+    <div class="col">
+      <h2>Geometry</h2>
+        {% block col2 %}
+        <p>{{ student.geom_grades }}</p>
+        <p class="term">{{ student.geom_term_grades }}<p>
+        {% endblock%}
+    </div>
+  </div>
+</div>
+{% endblock %}

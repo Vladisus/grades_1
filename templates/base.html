@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{% static "main.css" %}"></head>
+<body>
+
+
+<nav class="main-nav clearfix">
+  <div class="wrap">
+    <a href="/home/">Home</a>
+    <p>Fiz_mat_1</p>
+  </div>
+</nav>
+
+  <section id="landing">
+    {% block langing %}
+<div class="wrap">
+  <h1>{% block name %} Vlad!! {% endblock %}</h1>
+</div>
+<div class="features clearfix">
+  <div class="wrap">
+    <div class="col">
+        {% block col1 %}
+        {% endblock%}
+    </div>
+    <div class="col">
+    {% block col2 %}
+      {% endblock %}
+    </div>
+    {% block news %}
+    {% endblock %}
+  </div>
+</div>
+{% endblock %}
+</section>
+</body>
+</html>

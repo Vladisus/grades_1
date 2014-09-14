@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block langing %}
+<div class="wrap">
+  <h1>{% block name %} Перший математичний{% endblock %}</h1>
+</div>
+<div class="features clearfix">
+  <div class="wrap">
+    <div class="col">
+      <h3>NEWS</h3>
+      <p>
+        {% block col1 %}
+        <p>Тут ви можете знайти ваші оцінки з Алгебри, та геометрії </p>
+        {% endblock%}
+      </p>
+    </div>
+    <div class="col">
+    {% block col2 %}
+      <h3>
+        <a href="list/">
+          <span>List</span>
+        </a>
+      </h3>
+      {% endblock %}
+    </div>
+          <div class="col1">
+          <h2>Останні оцінки : </h2>
+          <ul class="rolldown-list" >
+              {% for list_obj in list %}
+  <li>
+    <a href="list/get/{{ list_obj.id }}/">{{ list_obj }}</a>
+    <span>{{ list_obj.latest_grade }}</span>
+  </li>
+  {% endfor %}
+          </ul>
+      </div>
+  </div>
+</div>
+{% endblock %}

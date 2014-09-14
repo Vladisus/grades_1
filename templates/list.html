@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block langing %}
+<div class="wrap">
+  <h1>{% block name %} Our Class! {% endblock %}</h1>
+</div>
+<ul class="rolldown-list" >
+  {% for list_obj in list%}
+  <li>
+    <a href="get/{{ list_obj.id }}/">{{ list_obj }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

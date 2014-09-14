@@ -1,0 +1,207 @@
+/* ================================
+GLOBAL STYLES
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-transition: all 0.2s ;
+  -moz-transition: all 0.2s ;
+  -webkit-transition: all 0.2s ;
+  transition: all 0.2s ;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ================================
+Typography
+================================= */
+
+
+html {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #767676;
+  font-family: 'DroidSans';
+}
+
+h1 {
+  text-align: center;
+  color: #767676;
+  font-size: 2.625em;
+}
+
+a{
+    color: #888DCE;
+    text-decoration: none;
+}
+a:hover{
+    color: #767676;
+}
+
+p {
+  color: #767676;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.2);
+}
+
+
+/* ================================
+Layout
+================================= */
+
+.wrap {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.col p{
+  font-size: 1.2em;
+  text-align: center;
+  text-align:--mozcenter;
+}
+.col1{
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+.col1 p{
+    border-top: 2px solid #eee; 
+}
+.col h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.col h3 a span{
+    font-size: 5em;
+}
+.col h3 a span:hover{
+    color: #FF6666;
+
+}
+
+.col:first-child{
+  border-right: 2px solid #eee;
+}
+.term{
+  text-align: center;
+  color: #FF6666;
+}
+.dz{
+  padding: 50px;
+}
+
+/* ================================
+Navigation
+================================= */
+
+.main-nav {
+  background-color: rgba(255,255,255,.15);
+  padding: 20px 0;
+  margin-bottom: 60px;
+  box-shadow: 0 3px 3px rgba(0,0,0,.05);
+}
+
+nav a {
+  float: right;
+  margin-left: 40px;
+}
+
+.main-logo {
+  float: left;
+  margin: 0;
+}
+
+/* ================================
+Landing Page Section
+================================= */
+
+body {
+  background: url('geometry2.png');
+}
+
+.features {
+  background-color: rgba(255,255,255,.15);
+  margin-top: 60px;
+  padding: 20px 0;
+  box-shadow: 0 3px 3px rgba(0,0,0,.05);
+
+}
+
+/* ================================
+ul li
+================================= */
+
+
+.rolldown-list {
+  text-align: left;
+  width: 80%;
+  border-left: 7px solid #BEC1E4;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 auto;
+  list-style-type:none;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.rolldown-list li { 
+  list-style-type:none;
+  padding:0.6em 1.5em;
+  margin:0;
+  background:#D4D7FE;
+}
+.rolldown-list li span { 
+    float: right;
+    color: #FF6666;
+}
+
+.rolldown-list li:nth-child(odd) {
+  background:#fff;
+}
+.rolldown-list a{
+  color: #888DCE;
+}
+.rolldown-list a:hover{
+  color: #FCF489;
+}
+
+
+
+
+
+
+
+/* ================================
+Media Queries
+================================= */
+
+@media screen and (max-width: 600px) {
+  .col1 {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}

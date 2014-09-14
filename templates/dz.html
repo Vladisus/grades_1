@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block langing %}
+<div class="wrap">
+  <h1>{% block name %} Homework {% endblock %}</h1>
+</div>
+    {% block col1 %}
+    <p class="dz">{{ dz.home_news }}</p>
+    {% endblock %}
+{% endblock %}
